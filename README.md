@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>Fully Responsive Travel Agency Blog Website</h1>
-  <h2>Built using HTML, JavaScript, SCSS & Bootstrap</h2>
+  <h3>Fully Responsive Travel Agency Blog Website</h3>
+  <h4>Built using HTML, JavaScript, SCSS & Bootstrap</h4>
 </div>
 
 <br>
