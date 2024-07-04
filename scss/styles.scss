@@ -1,0 +1,275 @@
+//Main Page
+.layout {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+//Navigation
+.navbar-nav {
+    gap: 10px;
+}
+.navbar .btn-outline-light {
+    border: 1px solid white;
+}
+.navbar .btn-outline-light:hover {
+    color: #1e2022 ;
+    background-color:  #ffefdb;
+}
+.navbar-sticky{
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.navbar .btn-outline-dark{
+    border: 1px solid #1e2022 ;
+}
+.navbar{
+    transition: all 0.5;
+}
+.navbar-nav .nav-item .actives {
+  color: #2bdada ;
+}
+
+
+//Hero
+.header {
+    background: url(../images/hero-bg.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+} 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); // Semi-transparent background
+    z-index: 1; // Ensure the overlay is behind the text
+}
+.hero {
+    position: relative;
+    z-index: 2; // Ensure the text is above the overlay
+}
+.header  .btn-primary:hover {
+  background-color:  #ffefdb;
+  color: #1e2022;
+}
+.frame-decoration {
+    position: relative;
+    z-index: 2; // Ensure the SVG is above the overlay
+ }
+
+
+ //Details
+
+.d-flex .flex-column {
+    display: flex;
+    flex-direction: column;
+  
+    div {
+      display: flex;
+      align-items: center; // This will center the items vertically
+      margin-bottom: 30px; // Optional: Add some space between the rows
+      gap: 8px;
+      margin-right: 90px;
+     
+    }
+  
+    ion-icon {
+      width: 30px;
+      height: 30px;
+      padding: 10px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      color: #008080;
+      margin-right: 10px; // This will add space between the icon and the text
+    }
+  
+    .fs-5 {
+      display: flex;
+      align-items: center; // This will ensure the text aligns vertically with the icon
+    }
+}
+  
+
+
+//Statement
+.statement {
+    position: relative; /* Ensure the container is relative to position the pseudo-element */
+    background-image: url('../images/statement-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .statement::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire container */
+    height: 100%; /* Cover the entire container */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  }
+
+  .statement .text-container {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  .modal .text-container .btn-light{
+    border: 1px solid #008080;
+  }
+ 
+  .modal .text-container .btn-light:hover{
+    background-color: #008080;
+    color: white;
+  }
+
+
+  .small-image {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Ensure the height matches the width for a perfect circle */
+    object-fit: cover; /* Ensures the image covers the entire circle without distortion */
+  }
+  
+
+    //Subscribe 
+  .subscribe {
+   position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/subs.jpg');
+    background-size: cover;
+    background-position: center;
+    
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); // Adjust the overlay color and opacity as needed
+    }
+  
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50%; // Make sure the container takes the full height of the section
+      margin-top: 50px;
+    }
+  }
+
+
+  .contact-bg {
+    position: relative; /* Ensure the container is relative to position the pseudo-element */
+    background-image: url('../images/contact-bg.jpg');
+    background-size: cover;
+  }
+  
+   //Map
+  .map iframe {
+    left: 0;
+    top: 0;
+    height: 500px;
+    width: 100%;
+    align-items: start;
+  }
+
+
+  //Gallery
+
+  .gallery-bg {
+    position: relative; /* Ensure the container is relative to position the pseudo-element */
+    background-image: url('../images/g-bg.jpg');
+    background-size: cover;
+  }
+
+ .gallery img {
+    width: 100%;
+    height: 200px; /* Set the desired height */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+  .next {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    align-items: center;
+  }
+
+
+
+
+
+
+
+
+ @media (max-width: 1000px) {
+
+      //Icons
+    .icons .col-md-2 > div > h2 br,
+    .icons .col-md-2 > div > small br {
+      display: none; /* Hide <br> tag within <h2> inside col-md-2 at max-width: 1000px */
+    }
+
+    .icons .col-md-2 {
+        text-align: center; /* Center align content inside col-md-2 */
+        margin: auto; /* Center horizontally */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .icons .col-md-2 > div > small{
+        position: relative;
+        top: -10px; /* Move the <small> element up by 30px */
+    }
+
+    .icons .col-md-3 {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items horizontally */
+        text-align: center; /* Center text */
+        margin: 10px auto; /* Add some margin for spacing */
+        gap: 1rem; /* Add some spacing between icon and text */
+      }
+      
+      .icons .col-md-2 {
+        text-align: center; /* Center align content inside col-md-2 */
+        margin: 10px auto; /* Center horizontally and add some margin */
+    }
+
+
+    //Details
+
+    .details .container {
+       margin-top: -50px;
+    }
+
+    
+     //Gallery
+    .next .previous {
+       display: none;
+    }
+
+ 
+
+
+  }
+
+
+
+
+  

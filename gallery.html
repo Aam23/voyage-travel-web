@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+
+    <!---------- External CSS styles --------->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--------- Bootstrap Css Style ----------->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+      <!--------- Fontawesome Css Style ----------->
+    <link rel="stylesheet" href="css/fontawesome.css">
+
+     <!--------- Icons ----------->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+      <!--------- Google Fonts ----------->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;
+    0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+     <!--------- Favicon ----------->
+     <link rel="shortcut icon" href="images/favicon.jpeg" type="image/x-icon">
+    
+
+</head>
+<body>
+
+   <div class="layout">
+
+     <!--------- Navigation ----------->
+     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo-dark.png" alt="" width="170">
+        </a>
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNavDropdown">
+          <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+            <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5h12M4 12h16M4 19h8"/>
+          </svg>
+        </button>
+            
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link fw-semibold ">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link fw-semibold actives">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link btn btn-outline-light fw-semibold px-3 mx-4">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+     <!--------- Header ----------->
+     <header class="header gallery-bg ">
+
+        <!-- Overlay -->
+      <div class="overlay"></div>
+ 
+       <!-- Hero -->
+       <div class="hero text-white pt-7">
+         <div class="container-xl d-flex justify-content-center align-items-center text-center h-50">
+           <div class="text-container p-5 mb-5">
+             <h1 class="display-3 fw-bold">
+               Our Gallery
+             </h1>
+            <p>Capturing the essence of every journey, one photo at a time.</p>
+           </div>
+         </div>
+       </div>
+       
+       <svg class="frame-decoration" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1920 192.275">
+         <defs>
+             <style>
+                 .cls-1 {
+                  fill: white;
+                  
+                 }
+             </style>
+         </defs>
+         <title>frame-decoration</title>
+         <path class="cls-1" d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V351.03H0V158.755Z" transform="translate(0 -158.755)"></path>
+     </svg>
+ 
+     </header>
+
+    
+     <!--------- Gallery ----------->
+     <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-3">
+                    <img src="images/g-1.jpg" class="img-fluid">
+                    <img src="images/g-2.jpg" class="img-fluid">
+                    <img src="images/g-3.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-4 col-md-3">
+                  <img src="images/g-4.jpg" class="img-fluid">
+                  <img src="images/g-5.jpg" class="img-fluid">
+                  <img src="images/g-6.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-4 col-md-6">
+                  <img src="images/g-7.jpg" class="img-fluid">
+                  <img src="images/g-8.jpg" class="img-fluid">
+                  <img src="images/g-9.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <!--------- Next ----------->
+      <section class="next d-flex justify-content-around align-content-center">
+
+        <div class="previous">
+          <p class="fs-5 fw-semibold text-primary"> <i class="fa-solid fa-angle-left"></i> Go to page 1</p>
+        </div>
+
+        <div class="btn-container gap-5">
+          <button class="btn btn-outline-primary">
+              <i class="fa-solid fa-arrow-left"></i>
+          </button>
+      
+          <button class="btn btn-primary btn-bg">
+              <span>Next page</span>
+              <i class="fa-solid fa-arrow-right"></i>
+          </button>
+      </div>
+
+        <div class="page">
+          <p>Page 1 of 3</p>
+        </div>
+
+      </section>
+
+
+
+
+    <!--------- Subscribe ----------->
+    <section class="subscribe">
+      <div class="container">
+        <div class="col-lg-7">
+          <div class="text-container text-white d-flex flex-column justify-content-center h-100 mb-5">
+            <h2 class="fw-bold">Sign Up For Our Newsletter & Promotion</h2>
+            <p>
+              Stay updated with the latest travel news, exclusive promotions, and inspiring destination highlights
+              by subscribing to our newsletter. Be the first to know about special offers and new adventures that await you!
+            </p>
+            <form action="">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" name="email" placeholder="Email Address" id="">
+                <button class="btn btn-primary text-white rounded-end">
+                  <ion-icon name="send-outline"></ion-icon> Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <!--------- Social ----------->
+      <section class="social text-bg-dark py-4 overflow-hidden">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-5 offset-md-3 text-center fs-6">
+               <p>Follow us for travel inspiration, stunning destinations, and insider tips. Don’t miss out on our latest updates and exciting travel stories!</p>
+                <div class="social-icons d-flex justify-content-center gap-4 mt-3">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+   
+      <!--------- Footer ----------->
+      <footer class="border-top border-primary bg-dark text-white py-4">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-8">
+              <ul class="nav">
+
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link link-light">Overview</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link link-light">Review</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link link-light">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link link-light">Contact</a>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <p class="text-end  d-md-block">
+                Copyright &copy; Voyage, A.A.Mintah 2024
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+
+
+
+   </div>
+
+
+
+
+    
+
+     <!--------- Bootstrap JS ----------->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+     <!---------- Custom JS ----------->
+    <script src="js/script.js"></script>
+
+     <!---------- Ionicons ----------->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
